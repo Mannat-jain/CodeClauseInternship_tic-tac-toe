@@ -29,6 +29,8 @@ The Minimax algorithm is a classic decision rule used in two-player turn-based g
 
 ttt_gui.py: Main game file (includes both GUI and AI logic)
 
+ttt_random.py: Main game file(includes randomness in AI moves)
+
 🎮 Tic-Tac-Toe Game with AI.mp4: Demo video showing gameplay
 
 README.md: Project overview and documentation
