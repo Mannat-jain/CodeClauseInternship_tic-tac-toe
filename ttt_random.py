@@ -58,11 +58,11 @@ def ai_move():
             board[i] = " "
             if score > best_score:
                 best_score = score
-                best_moves = [i]  # reset list
+                best_moves = [i]  
             elif score == best_score:
                 best_moves.append(i)
     if best_moves:
-        move = random.choice(best_moves)  # pick randomly among best moves
+        move = random.choice(best_moves) 
         board[move] = "O"
         buttons[move].config(text="O", state="disabled")
         check_game_over()
@@ -109,9 +109,9 @@ root.title("Tic Tac Toe AI")
 
 buttons = []
 for i in range(9):
-    button = tk.Button(root, text=" ", font=("Arial", 20), width=5, height=2,bg="#e6f7ff",        # Light blue background
-                       fg="#003366",        # Dark blue text
-                       activebackground="#cceeff",  # Button color when clicked
+    button = tk.Button(root, text=" ", font=("Arial", 20), width=5, height=2,bg="#e6f7ff",       
+                       fg="#003366",       
+                       activebackground="#cceeff", 
                        activeforeground="#003366",
                        command=lambda i=i: on_click(i))
     button.grid(row=i//3, column=i%3)
